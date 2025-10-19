@@ -10,6 +10,6 @@
 let userName;
 document.getElementById("myButton").onclick = function () {
   userName = document.getElementById("inputField").value;
-  document.getElementById("h3").textContent = `Hello, ${userName}! `;
+  document.getElementById("h3").textContent = `Welcome, ${userName}! `;
   console.log(userName);
 };

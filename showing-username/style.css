@@ -2,7 +2,7 @@ body{
   font-family: Poppins, sans-serif;
   background-color: rgb(216, 218, 166);
   background: #f2f2f2;
-  text-align: center;
+  /* text-align: center; */
   font-size: 30px;
   display: flex;
   flex-direction: column;
