@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #833AB4;
+  background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+  font-family: Verdana, Tahoma, sans-serif;
+}
+#container-2{
+  text-align: center;
+}
+#h1{
+  border: 5px solid white;
+  text-align: center;
+  font-size: 48px;
+  color: white; 
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 40px 10em;
+  display: flex;
+  justify-content: center;
+}
+.buttons {
+  /* border: 2px solid rgb(0, 0, 96); */
+  border: none;
+  text-align: center;
+  font-size: 28px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  background: #ffcc00;      /* bright yellow contrasts with blue bg */
+  color: #002b5b;           /* dark navy text for good readability */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.493);
+}
+#p{
+  margin-left: 13em;
+  margin-right: 13em;
+  background-color: #002b5b;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 28px;
+  cursor: auto;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.493);
+}
+#randomNumBtn:hover {
+  background: #ff5e00;      /* warm orange for hover contrast */
+  color: white;
+  transform: scale(1.05);
+}
+#randomNumOutput:hover {
+  background: white;        /* white for hover contrast */
+  color: black;
+  transform: scale(1.05);
+}

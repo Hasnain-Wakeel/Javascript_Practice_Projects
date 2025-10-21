@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  height: 89vh;
+  background: linear-gradient(250deg, #020024 0%, #090979 35%, #00d4ff 100%);
+  font-family: Verdana, Tahoma, sans-serif;
+}
+#h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2vw;
+  margin: 5vw 10em 2vw 10em;
+  border-radius: 10px;
+  border: 4px solid white;
+  max-width: 90%;
+  box-sizing: border-box;
+}
+#container {
+  text-align: center;
+  margin: 60px auto;
+}
+#text {
+  /* background: linear-gradient(250deg,#00d4ff 100%); */
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 28px;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: auto;
+  border-radius: 5px;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.493);
+  border: 2px solid white;
+}
+.buttons {
+  font-size: 28px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  background: #ffcc00; /* bright yellow contrasts with blue bg */
+  color: #002b5b; /* dark navy text for good readability */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.493);
+}
+#rollBtn:hover {
+  background: #ff5e00; /* warm orange for hover contrast */
+  color: white;
+  transform: scale(1.05);
+}
+#numBtn:hover {
+  background: white; /* white for hover contrast */
+  color: black;
+  transform: scale(1.05);
+}
