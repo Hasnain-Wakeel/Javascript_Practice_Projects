@@ -79,21 +79,48 @@
 
 // ------------------------------ Creating a Dice : ----------------------------------
 
+// const myButton = document.getElementById("rollBtn");
+// const numberBtn = document.getElementById("numBtn");
+
+// const min = 1;
+// const max = 6;
+
+// let randomNumber;
+
+// myButton.onclick = function showNumber() {
+// //   let randomNumber;              Local Scope Variable / creates a new variable on every click
+//   randomNumber = Math.floor(Math.random() * max) + min;
+//   numberBtn.textContent = randomNumber;
+//     console.log(randomNumber);
+// };
+
+
+// ------------------------ If we want to roll down three Dices in a Single Click : -------------------------
+
+
 const myButton = document.getElementById("rollBtn");
-const numberBtn = document.getElementById("numBtn");
+const numberBtn_1 = document.getElementById("numBtn-1");
+const numberBtn_2 = document.getElementById("numBtn-2");
+const numberBtn_3 = document.getElementById("numBtn-3");
 
 const min = 1;
 const max = 6;
 
-let randomNumber;
+let randomNumber_1;
+let randomNumber_2;
+let randomNumber_3;
 
 myButton.onclick = function showNumber() {
-//   let randomNumber;              Local Scope Variable / creates a new variable on every click
-  randomNumber = Math.floor(Math.random() * max) + min;
-  numberBtn.textContent = randomNumber;
-    console.log(randomNumber);
-};
-
+  randomNumber_1 = Math.floor(Math.random() * max) + min;
+  randomNumber_2 = Math.floor(Math.random() * max) + min;
+  randomNumber_3 = Math.floor(Math.random() * max) + min;
+  numberBtn_1.textContent = randomNumber_1;
+  numberBtn_2.textContent = randomNumber_2;
+  numberBtn_3.textContent = randomNumber_3;
+  // console.log(randomNumber_1);
+  // console.log(randomNumber_2);
+  // console.log(randomNumber_3);
+}
 
 
 // ------------------------------------------------------------------------------------------------
