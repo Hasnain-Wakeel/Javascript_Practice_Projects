@@ -3,55 +3,66 @@
 // ELSE STATEMENTS = if the condition is false, do something else.
 
 
-// ---------------- Creating a Program to Check Your Eligibility to Drive ----------------
+// ---------------- Check Your Eligibility to Drive ----------------
 
 
 const userInput = document.getElementById("userInput");
-const submitButton = document.getElementById("submitBtn");
+const hasLicenseCheckbox = document.getElementById("hasLicense");
+const submitBtn = document.getElementById("submitBtn");
 const output = document.getElementById("output");
 
-let age;
-
 submitBtn.onclick = function showingOutput() {
+  let ageInput = userInput.value.trim();    
+  let ageValue = Number(ageInput);          
+  let hasLicense = hasLicenseCheckbox.checked;
 
-  age = userInput.value;
-  age = Number(age);
-
-  if (age >= 100) {
-
-    output.textContent = `You are TOO OLD to Drive!`;
-    // alert(`You are TOO OLD to enter this site`);
-
-  } 
-
-  else if (age >= 70 && age < 100) {
-  
-    output.textContent = `You are an OLD person , So you must be Drive carefully!.`;
-
+  if (ageInput === "" || isNaN(ageValue) || ageValue < 0) {
+    showMessage("Please enter a valid age!", "red");
+    userInput.value = "";
+    userInput.focus();
+    return;
   }
 
-  else if (age == 0) {
-  
-    output.textContent = `You can't Drive!!! You were just born!!!`;
-
-  } 
-
-  else if (age >= 18 && age < 70) {
-  
-    output.textContent = `You are an adult , So you can Drive!.`;
-
+  if (hasLicense === false) {
+    alert("You must have a Driving License to drive!");
+    output.textContent = "";
+    userInput.focus();
+    return;
   }
 
-  else if (age < 0) {
-
-    output.textContent = `Your age can't be below 0`;
-
+  if (ageValue === 0) {
+    showMessage("You can't drive. You were just born!", "red");
   } 
-
+  else if (ageValue >= 100) {
+    showMessage("You are TOO OLD to drive!", "red");
+  } 
+  else if (ageValue >= 70 && ageValue < 100) {
+    showMessage("You're old, so drive carefully!", "orange");
+  } 
+  else if (ageValue >= 18 && ageValue < 70) {
+    showMessage("You are an adult, so you can drive!", "green");
+  } 
   else {
-
-    output.textContent = `You must be 18+ to Drive!`;
-
+    showMessage("You must be 18+ to drive!", "red");
   }
 
+  resetInputs();
 };
+
+// Helper to show output with animation
+function showMessage(message, color) {
+  output.style.color = color;
+
+  // --- Reset and force re-render ---
+  output.classList.remove("show");
+  output.textContent = "";          // remove old text
+  void output.offsetWidth;          // force re-flow
+  output.textContent = message;     // re-add text
+  output.classList.add("show");     // trigger animation again
+}
+
+function resetInputs() {
+  userInput.value = "";
+  hasLicenseCheckbox.checked = false;
+  userInput.focus();
+}
