@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Bank</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Smart Bank</h1>
+
+    <div id="container">
+
+        <h3 id="h3-1" class="h3">Already a subscriber ?</h3>
+
+        <div class="option" id="checkBoxOption">
+            <input type="checkbox" id="checkBox">
+            <label for="checkBox">Did you subscribed our plan ?</label>
+        </div>
+
+        <hr class="divider">
+
+        <h3 id="h3-2" class="h3">Select Payment Method :</h3>
+
+        <div class="option">
+            <input type="radio" id="visa" name="radioBtns">
+            <label for="visa">Visa</label>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="masterCard" name="radioBtns">
+            <label for="masterCard">Master Card</label>
+        </div>
+
+        <div class="option">
+            <input type="radio" id="payPal" name="radioBtns">
+            <label for="payPal">PayPal</label>
+        </div>
+
+        <button type="submit" id="submitBtn">Submit</button>
+
+        <p id="subscribeOutput"></p>
+        <p id="paymentOutput"></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+</body>
+</html>
