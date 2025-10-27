@@ -3,7 +3,7 @@ body {
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: white;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -16,10 +16,9 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: stretch;
-  gap: 12px; 
-  /* padding-bottom: -10px; */
+  gap: 12px;
 }
 h1 {
   font-size: 50px;
@@ -31,7 +30,7 @@ h1 {
   letter-spacing: 3px;
   text-align: center;
 }
-/* h1:hover {
+/* /*h1:hover {
   color: #00c3ff;
   transform: scale(1.1);
   transition: 0.3s ease-in-out;
@@ -39,7 +38,7 @@ h1 {
 } */
 .option {
   display: flex;
-  align-items: center; 
+  align-items: center;
   background: rgba(255, 255, 255, 0.15);
   padding: 10px 15px;
   border-radius: 8px;
@@ -60,17 +59,17 @@ h1 {
   margin-top: -20px;
   margin-bottom: 1px;
 }
-.h3{
+.h3 {
   font-size: 17px;
   font-weight: 400;
 }
-#h3-1{
+#h3-1 {
   color: #33ff00;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
-#h3-2{
+#h3-2 {
   color: #ffff00;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   margin-top: -2px;
   margin-bottom: 3px;
 }
@@ -103,29 +102,38 @@ label {
   height: 1px;
   border: none;
   background: rgba(255, 255, 255, 0.3);
-  margin: 10px ;
+  margin: 10px;
   margin-bottom: 10px;
   margin-left: -1px;
 }
 #subscribeOutput,
 #paymentOutput {
   margin-top: 5px;
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   color: rgb(240, 220, 37);
 }
 .option input[type="checkbox"] {
   accent-color: #33ff00;
   transform: scale(1.2);
   margin-right: 10px;
-  margin-top: 3px; 
+  margin-top: 3px;
   cursor: pointer;
 }
 .option input[type="radio"] {
   accent-color: #ffff00;
   transform: scale(1.2);
   margin-right: 10px;
-  margin-top: 3px; 
+  margin-top: 3px;
   cursor: pointer;
+}
+#subscribeOutput {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+#output-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
 }

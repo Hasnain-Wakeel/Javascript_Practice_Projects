@@ -10,13 +10,13 @@
 
   <h1>Smart Bank</h1>
 
-    <div id="container">
+     <div id="container">
 
         <h3 id="h3-1" class="h3">Already a subscriber ?</h3>
 
         <div class="option" id="checkBoxOption">
             <input type="checkbox" id="checkBox">
-            <label for="checkBox">Did you subscribed our plan ?</label>
+            <label for="checkBox" id="checkBoxLabel">Did you subscribed our plan ?</label>
         </div>
 
         <hr class="divider">
@@ -40,14 +40,19 @@
 
         <button type="submit" id="submitBtn">Submit</button>
 
-        <p id="subscribeOutput"></p>
-        <p id="paymentOutput"></p>
+        <div id="output-container">
+            <p id="subscribeOutput"></p>
+            <p id="paymentOutput"></p>
+        </div>
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> 
+
+    <!-- --------- Reloading/Refreshing the page after a specific time : ---------- -->
 
     <!-- <meta http-equiv="refresh" content="5"> -->
+
 
 </body>
 </html>
