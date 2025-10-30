@@ -49,16 +49,19 @@ submitBtn.onclick = function showingOutput() {
   resetInputs();
 };
 
-// Helper to show output with animation
+// Helper to show output with animation :
+
 function showMessage(message, color) {
   output.style.color = color;
 
   // --- Reset and force re-render ---
+
   output.classList.remove("show");
   output.textContent = "";          // remove old text
   void output.offsetWidth;          // force re-flow
   output.textContent = message;     // re-add text
   output.classList.add("show");     // trigger animation again
+
 }
 
 function resetInputs() {
@@ -66,3 +69,4 @@ function resetInputs() {
   hasLicenseCheckbox.checked = false;
   userInput.focus();
 }
+
